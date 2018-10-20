@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./src/css/owl.carousel.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.green.css">
+    <style>
+        body{
+            background-color: #222;
+        }
+        .owl-carousel div{
+            width: 100%;
+            height: 400px;
+        }
+        #ccc1{
+            background-color: #63ff6c;
+        }
+        #ccc2{
+            background-color: #ff8b72;
+        }
+        #ccc3{
+            background-color: #4283ff;
+        }
+    </style>
+</head>
+<body>
+<div class="owl-carousel owl-theme">
+    <div id="ccc1">
+    </div>
+    <div id="ccc2">
+    </div>
+    <div id="ccc3">
+    </div>
+</div>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./src/js/vendor/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            loop:true,
+            autoplay:true
+        });
+    });
+
+</script>
+</body>
+</html>
